@@ -1,40 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tutorial: Next.js para GitHub Pages
 
-## Getting Started
+Este repositório contém um tutorial passo a passo sobre como configurar e publicar um projeto Next.js no GitHub Pages, utilizando GitHub Actions para automação. Ideal para desenvolvedores que desejam aprender como integrar tecnologias de front-end modernas com soluções de CI/CD.
 
-First, run the development server:
+## Pré-requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Antes de começar, certifique-se de que você tem:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Conhecimento básico de React e Next.js.
+- Uma conta no GitHub e familiaridade básica com operações como push, pull, commit, etc.
+- Node.js e npm instalados em sua máquina local.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Configuração do Projeto
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Clone este repositório para sua máquina local:
+   ```bash
+   git clone https://github.com/seu-usuario/nextjs-to-github-pages.git
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+2. Navegue até o diretório do projeto e instale as dependências:
+   ```bash
+   cd nextjs-to-github-pages
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Execute o projeto localmente para garantir que tudo está funcionando:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+## Publicando no GitHub Pages
 
-To learn more about Next.js, take a look at the following resources:
+1. Configure o arquivo `next.config.js` com as configurações necessárias para exportação estática.
+2. Adicione um script `build` no seu `package.json` para automatizar o processo de construção e publicação.
+3. Configure as GitHub Actions para automatizar o deploy cada vez que um novo código é enviado para o repositório.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estrutura do Tutorial
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Introdução**: Visão geral do projeto e dos objetivos do tutorial.
+- **Configuração Inicial**: Como configurar seu ambiente Next.js e prepará-lo para o GitHub Pages.
+- **GitHub Actions**: Explicação passo a passo de como criar e configurar GitHub Actions para automatizar seu workflow.
+- **Dicas e Truques**: Melhores práticas e dicas para otimizar seu projeto Next.js para o GitHub Pages.
 
-## Deploy on Vercel
+## Contribuindo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contribuições são sempre bem-vindas! Se você tem uma sugestão para melhorar este tutorial, sinta-se à vontade para fazer um fork do repositório, realizar as alterações e enviar um pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Suporte
+
+Se você encontrar algum problema ou tiver alguma dúvida sobre este tutorial, por favor, abra uma issue neste repositório.
